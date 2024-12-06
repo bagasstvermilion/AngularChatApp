@@ -1,3 +1,5 @@
+![AngularJS](https://github.com/user-attachments/assets/8dad27db-460a-4ccb-b3fb-e4ea0c02c680)
+
 # AngularChatApp
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
