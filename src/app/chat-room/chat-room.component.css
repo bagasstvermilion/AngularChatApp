@@ -1,37 +1,33 @@
-/* Menggunakan font 'Roboto' secara global */
 body {
   font-family: "Roboto", sans-serif;
 }
 
-/* Header untuk chat (menampilkan nama pengguna) */
 .chat-header {
-  background-color: #e0e0e0; /* Warna lebih gelap dari background */
-  height: 50px; /* Tinggi header */
+  background-color: #e0e0e0;
+  height: 50px;
   margin: 0;
-  padding: 0; /* Menghilangkan padding agar tidak ada celah */
-  width: 100%; /* Memastikan header memenuhi lebar layar */
+  padding: 0;
+  width: 100%;
   display: flex;
-  justify-content: center; /* Menyelaraskan nama pengguna di tengah */
-  align-items: center; /* Menyelaraskan nama secara vertikal */
+  justify-content: center;
+  align-items: center;
 }
 
 .username {
   font-size: 18px;
-  font-weight: 500; /* Menggunakan berat font sedang untuk nama pengguna */
-  color: #000000; /* Warna teks putih agar kontras dengan background gelap */
-  letter-spacing: 1px; /* Sedikit jarak antar huruf */
+  font-weight: 500;
+  color: #000000;
+  letter-spacing: 1px;
 }
 
-/* Kontainer utama */
 .chat-container {
   display: flex;
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  font-family: "Roboto", sans-serif; /* Menggunakan font Roboto */
+  font-family: "Roboto", sans-serif;
 }
 
-/* Daftar pesan */
 .message-list {
   flex-grow: 1;
   overflow-y: auto;
@@ -43,7 +39,6 @@ body {
   padding-bottom: 60px;
 }
 
-/* Kotak pesan (umum untuk semua pesan) */
 .message-box {
   padding: 8px 12px;
   border-radius: 8px;
@@ -58,7 +53,6 @@ body {
   word-wrap: break-word;
 }
 
-/* Pesan saya (posisi di kanan) */
 .my-message {
   background-color: #4caf50;
   color: white;
@@ -69,7 +63,6 @@ body {
   max-width: 70%;
 }
 
-/* Pesan orang lain (posisi di kiri) */
 .other-message {
   background-color: #e0e0e0;
   color: black;
@@ -80,7 +73,6 @@ body {
   max-width: 70%;
 }
 
-/* Seksi input pesan */
 .message-input {
   display: flex;
   align-items: center;
