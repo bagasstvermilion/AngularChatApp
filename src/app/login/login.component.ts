@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router'; // Impor Router untuk navigasi
-import { FormsModule } from '@angular/forms'; // Impor FormsModule untuk ngModel
+import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
   standalone: true,
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  imports: [FormsModule], // Mengimpor FormsModule untuk ngModel
+  imports: [FormsModule],
 })
 export class LoginComponent {
   username: string = '';
@@ -17,7 +17,7 @@ export class LoginComponent {
   onLogin() {
     if (this.username) {
       console.log('Logging in as:', this.username);
-      this.router.navigate(['/chat']); // Arahkan ke halaman chat setelah login
+      this.router.navigate(['/chat']);
     } else {
       console.log('Username is required');
     }
