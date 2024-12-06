@@ -12,13 +12,12 @@ import { FormsModule } from '@angular/forms';
 export class ChatRoomComponent {
   messages: { sender: string; text: string }[] = [];
   newMessage: string = '';
-  username: string = 'me'; // Username pengguna (ganti jika perlu)
+  username: string = 'me';
 
   sendMessage() {
     if (this.newMessage.trim()) {
-      // Tambahkan pesan baru sebagai pengguna
       this.messages.push({ sender: this.username, text: this.newMessage });
-      this.newMessage = ''; // Hapus input setelah dikirim
+      this.newMessage = '';
     }
   }
 }
