@@ -7,11 +7,11 @@ import { ChatRoomComponent } from './chat-room/chat-room.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ChatRoomComponent, // Declare the ChatRoomComponent here
+    ChatRoomComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule, // Add FormsModule here for ngModel functionality
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
